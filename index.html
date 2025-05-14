@@ -17,23 +17,32 @@
     </title>
     <!-- Tailwindcss cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+    body {
+      font-family: "poppins", sans-serif;
+      font-cta {
+        font-family: "open sans", sans-serif;
+      }
+    }
+  </style>
   <body>
     <!-- Header -->
     <header
-      class="w-full bg-cover bg-center md:h-screen px-6 md:px-20 pt-10 bg-[url('/images/bg-hero-mobile.svg')] md:bg-[url('/images/bg-hero-desktop.svg')] bg-blue-100"
+      class="w-full bg-cover bg-center lg:h-screen px-6 lg:px-20 pt-10 bg-[url('/images/bg-hero-mobile.svg')] lg:bg-[url('/images/bg-hero-desktop.svg')] bg-cyan-50"
     >
       <!-- navigation -->
       <nav class="flex justify-between items-center">
-        <img src="./images/logo.svg" alt="logo" class="w-32 md:w-40" />
+        <img src="./images/logo.svg" alt="logo" class="w-32 lg:w-40" />
         <a
-          class="shadow-lg rounded-full py-2 px-6 md:px-10 bg-white font-bold text-sm md:text-base hover:bg-white/80 cursor-pointer"
+          class="shadow-lg rounded-full py-2 px-6 lg:px-10 bg-white font-bold text-sm lg:text-base hover:bg-white/80 cursor-pointer"
           href="#"
         >
           Try It Free
@@ -41,27 +50,27 @@
       </nav>
 
       <div
-        class="flex flex-col md:flex-row md:justify-between items-center gap-12 pt-20 pb-10 md:pb-20 mx-auto"
+        class="flex flex-col lg:flex-row lg:justify-between items-center gap-12 pt-20 pb-10 lg:pb-20 mx-auto"
       >
         <!-- Texte -->
-        <div class="md:w-[37%] text-center md:text-left">
-          <h1 class="font-bold text-3xl md:text-5xl leading-tight">
+        <div class="lg:w-[37%] text-center lg:text-left">
+          <h1 class="font-bold text-3xl lg:text-5xl leading-tight">
             Build The Community Your Fans Will Love
           </h1>
-          <p class="py-6 text-[16px] md:text-[18px]">
+          <p class="py-6 text-[16px] lg:text-[18px] text-gray-500">
             Huddle re-imagines the way we build communities. You have a voice
             but so does your audience. Create connections with your users as you
             engage in genuine discussion.
           </p>
           <button
-            class="rounded-full bg-pink-500 py-4 px-10 text-white text-sm md:text-base hover:bg-pink-500/50 cursor-pointer"
+            class="rounded-full bg-pink-500 py-4 px-10 text-white text-sm lg:text-base hover:bg-pink-500/50 cursor-pointer"
           >
             Get Started For Free
           </button>
         </div>
 
         <!-- Image -->
-        <div class="md:w-[50%]">
+        <div class="lg:w-[50%]">
           <img
             src="./images/illustration-mockups.svg"
             alt="mockup"
@@ -75,14 +84,14 @@
     <main>
       <!-- Services -->
       <div
-        class="flex flex-col justify-center items-center space-y-10 pt-40 px-5 md:px-20"
+        class="flex flex-col justify-center items-center space-y-10 pt-40 px-5 lg:px-20"
       >
         <div
-          class="flex text-center md:text-left flex-col-reverse md:flex-row justify-between items-center shadow-[0px_0px_10px_rgba(0,0,0,0.1)] rounded-lg p-15 md:pt-20 md:pl-20 md:pr-5 md:pb-30 w-full"
+          class="flex text-center lg:text-left flex-col-reverse lg:flex-row justify-between items-center shadow-[0px_0px_10px_rgba(0,0,0,0.1)] rounded-lg p-15 lg:pt-20 lg:pl-20 lg:pr-5 lg:pb-30 w-full"
         >
-          <div class="md:pl-20 mt-20 md:mt-0">
-            <h2 class="font-bold text-4xl pb-7">Grow Together</h2>
-            <p class="max-w-110">
+          <div class="lg:pl-20 mt-20 lg:mt-0">
+            <h2 class="font-bold text-xl lg:text-4xl pb-7">Grow Together</h2>
+            <p class="max-w-133 text-gray-500 lg:text-[18px]">
               Generate meaningful discussions with your audience and build a
               strong, loyal community. Think of the insightful conversations you
               miss out on with a feedback form.
@@ -98,7 +107,7 @@
         </div>
 
         <div
-          class="flex text-center md:text-left flex-col md:flex-row justify-between items-center shadow-[0px_0px_10px_rgba(0,0,0,0.1)] rounded-lg p-15 md:pt-20 md:pl-20 md:pr-5 md:pb-30 w-full"
+          class="flex text-center lg:text-left flex-col lg:flex-row justify-between items-center shadow-[0px_0px_10px_rgba(0,0,0,0.1)] rounded-lg p-15 lg:pt-20 lg:pl-20 lg:pr-5 lg:pb-30 w-full"
         >
           <div>
             <img
@@ -107,9 +116,11 @@
               alt=""
             />
           </div>
-          <div class="md:pl-20 mt-20 md:mt-0">
-            <h2 class="font-bold text-4xl pb-7">Flowing Conversations</h2>
-            <p class="max-w-110">
+          <div class="lg:pl-20 mt-20 lg:mt-0">
+            <h2 class="font-bold text-xl lg:text-4xl pb-7">
+              Flowing Conversations
+            </h2>
+            <p class="max-w-134 text-gray-500 lg:text-[18px]">
               You wouldn't paginate a conversation in real life, so why do it
               online? Our threads have just-in-time loading for a more natural
               flow.
@@ -118,11 +129,11 @@
         </div>
 
         <div
-          class="flex text-center md:text-left flex-col-reverse md:flex-row justify-between items-center shadow-[0px_0px_10px_rgba(0,0,0,0.1)] rounded-lg p-15 md:pt-20 md:pl-20 md:pr-5 md:pb-30 w-full"
+          class="flex text-center lg:text-left flex-col-reverse lg:flex-row justify-between items-center shadow-[0px_0px_10px_rgba(0,0,0,0.1)] rounded-lg p-15 lg:pt-20 lg:pl-20 lg:pr-5 lg:pb-30 w-full"
         >
-          <div class="md:pl-20 mt-20 md:mt-0">
-            <h2 class="font-bold text-4xl pb-7">Your Users</h2>
-            <p class="max-w-110">
+          <div class="lg:pl-20 mt-20 lg:mt-0">
+            <h2 class="font-bold text-xl lg:text-4xl pb-7">Your Users</h2>
+            <p class="max-w-127 text-gray-500 lg:text-[18px]">
               It takes no time at all to integrate Huddle with your app's
               authentication solution. This means, once signed in to your app,
               your users can start chatting immediately.
@@ -138,13 +149,13 @@
         </div>
 
         <div
-          class="bottom-[-50px] md:bottom-[-100px] p-8 md:p-20 rounded-xl relative text-center shadow-[0px_0px_10px_rgba(0,0,0,0.1)] bg-white w-[100%] md:w-[55%]"
+          class="bottom-[-50px] lg:bottom-[-100px] p-8 lg:p-20 rounded-xl relative text-center shadow-[0px_0px_10px_rgba(0,0,0,0.1)] bg-white w-[100%] lg:w-[55%]"
         >
-          <h2 class="font-bold text-xl md:text-3xl pb-9 md:pb-15">
+          <h2 class="font-bold text-lg lg:text-3xl pb-9 lg:pb-15">
             Ready To Build Your Community?
           </h2>
           <button
-            class="font-bold text-white rounded-full bg-pink-500 py-[15px] px-[30px] md:py-[24px] md:px-[100px] hover:bg-pink-500/50 cursor-pointer"
+            class="font-bold text-white rounded-full bg-pink-500 py-[15px] px-[30px] lg:py-[24px] lg:px-[100px] hover:bg-pink-500/50 cursor-pointer"
           >
             Get Started For Free
           </button>
@@ -153,17 +164,17 @@
     </main>
 
     <!-- Footer -->
-    <footer class="md:px-20 pt-40 pb-20 bg-cyan-950 text-white px-5">
+    <footer class="lg:px-20 pt-40 pb-20 bg-cyan-950 text-white px-5">
       <div class="pb-10">
         <img src="./images/logo.svg" alt="" />
       </div>
-      <div class="flex flex-col space-y-4 md:flex-row justify-between">
+      <div class="flex flex-col space-y-4 lg:flex-row justify-between">
         <div class="space-y-4">
           <div class="flex items-start gap-6">
             <div class="pt-2">
               <img src="./images/icon-location.svg" alt="Location icon" />
             </div>
-            <p class="w-87 leading-relaxed">
+            <p class="w-87 leading-relaxed text-[18px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
@@ -195,60 +206,37 @@
             <li><a href="#">Contact Us</a></li>
           </ul>
         </div>
-        <div class="flex flex-col justify-between text-center mt-10 md:mt-0">
-          <div class="flex justify-center">
+        <div class="flex flex-col justify-between text-center mt-10 lg:mt-0">
+          <div class="flex justify-center lg:justify-start">
             <ul class="flex gap-4">
               <li>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="25"
-                  height="25"
-                  viewBox="0 0 32 32"
+                <a
+                  class="group flex justify-center items-center border-2 border-gray-300 hover:border-pink-500 h-[30px] w-[30px] rounded-full"
+                  href="#"
                 >
-                  <g fill="currentColor">
-                    <path
-                      d="M16-.034C7.159-.034-.035 7.158-.035 16S7.159 32.034 16 32.034S32.035 24.842 32.035 16S24.841-.034 16-.034m0 31C7.748 30.966 1.035 24.252 1.035 16S7.748 1.034 16 1.034S30.965 7.748 30.965 16S24.252 30.966 16 30.966"
-                    />
-                    <path
-                      d="M19.5 7h-2.668C13.434 6.966 13 9.069 13 11.345V13h-1.5a.445.445 0 0 0-.5.5v3a.445.445 0 0 0 .5.5H13v7.5a.45.45 0 0 0 .503.5h3.055c.295.034.534-.205.44-.5L17 17h2.5a.445.445 0 0 0 .5-.5v-3a.445.445 0 0 0-.5-.5h-2.503L17 11.5c.097-.639.097-.535.69-.5h1.789c.139-.031.287-.014.391-.115s.164-.239.129-.385v-3A.444.444 0 0 0 19.5 7m-.535 2.944l-1.254-.048c-1.553 0-1.683.843-1.683 1.706l-.004 1.896a.534.534 0 0 0 .534.535H19v1.932h-2.44a.535.535 0 0 0-.535.534L16.024 24H14v-7.5c0-.295-.201-.534-.497-.534H12v-1.932h1.503a.53.53 0 0 0 .378-.156c.1-.101.118-.237.118-.379v-2.155c0-2.242.453-3.31 2.832-3.31h2.133v1.91z"
-                    />
-                  </g>
-                </svg>
+                  <i class="fa fa-facebook group-hover:text-pink-500"></i>
+                </a>
               </li>
               <li>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="25"
-                  height="25"
-                  viewBox="0 0 32 32"
+                <a
+                  class="group flex justify-center items-center border-2 border-gray-300 hover:border-pink-500 h-[30px] w-[30px] rounded-full"
+                  href="#"
                 >
-                  <g fill="currentColor">
-                    <path
-                      d="M16-.034C7.159-.034-.035 7.158-.035 16S7.159 32.034 16 32.034S32.035 24.842 32.035 16S24.841-.034 16-.034m0 31C7.748 30.966 1.035 24.252 1.035 16S7.748 1.034 16 1.034S30.965 7.748 30.965 16S24.252 30.966 16 30.966"
-                    />
-                    <path
-                      d="M24.794 11.046a3.7 3.7 0 0 0 .273-.643a.535.535 0 0 0-.781-.623a6 6 0 0 1-1.646.673a3.83 3.83 0 0 0-2.562-.987a3.82 3.82 0 0 0-3.814 3.973a8.82 8.82 0 0 1-5.735-3.178a.536.536 0 0 0-.876.07a3.81 3.81 0 0 0-.066 3.721a.6.6 0 0 0-.214.078a.57.57 0 0 0-.264.481c0 1.135.505 2.177 1.319 2.885l-.035.035a.53.53 0 0 0-.108.518a3.82 3.82 0 0 0 2.184 2.365a6.13 6.13 0 0 1-3.406.579a.545.545 0 0 0-.566.352a.536.536 0 0 0 .215.63a9.84 9.84 0 0 0 5.319 1.559c6.18 0 9.874-5.02 9.874-9.873l-.001-.164a7.1 7.1 0 0 0 1.541-1.66a.535.535 0 0 0-.651-.791m-1.745 1.755a.54.54 0 0 0-.222.461q.009.199.009.398c0 4.328-3.293 8.805-8.804 8.805a8.8 8.8 0 0 1-2.887-.488a7.1 7.1 0 0 0 3.045-1.39a.535.535 0 0 0-.32-.955a2.75 2.75 0 0 1-2.194-1.162q.38-.026.742-.124a.534.534 0 0 0-.036-1.04a2.74 2.74 0 0 1-2.081-1.905q.4.101.812.115c.235-.001.453-.145.526-.371s-.013-.475-.212-.607a2.75 2.75 0 0 1-1.143-2.945a9.88 9.88 0 0 0 6.568 2.972c.176.001.33-.062.437-.191s.148-.3.11-.464a2.75 2.75 0 0 1 4.682-2.506a.54.54 0 0 0 .494.159q.248-.05.489-.115a3 3 0 0 1-.226.151a.535.535 0 0 0 .338.988l.182-.023a6 6 0 0 1-.309.237"
-                    />
-                  </g>
-                </svg>
+                  <i class="fa fa-twitter group-hover:text-pink-500"></i>
+                </a>
               </li>
               <li>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="25"
-                  height="25"
-                  viewBox="0 0 256 256"
+                <a
+                  class="group flex justify-center items-center border-2 border-gray-300 hover:border-pink-500 h-[30px] w-[30px] rounded-full"
+                  href="#"
                 >
-                  <path
-                    fill="currentColor"
-                    d="M128 84a44 44 0 1 0 44 44a44.05 44.05 0 0 0-44-44m0 80a36 36 0 1 1 36-36a36 36 0 0 1-36 36m48-136H80a52.06 52.06 0 0 0-52 52v96a52.06 52.06 0 0 0 52 52h96a52.06 52.06 0 0 0 52-52V80a52.06 52.06 0 0 0-52-52m44 148a44.05 44.05 0 0 1-44 44H80a44.05 44.05 0 0 1-44-44V80a44.05 44.05 0 0 1 44-44h96a44.05 44.05 0 0 1 44 44ZM188 76a8 8 0 1 1-8-8a8 8 0 0 1 8 8"
-                  />
-                </svg>
+                  <i class="fa fa-instagram group-hover:text-pink-500"></i>
+                </a>
               </li>
             </ul>
           </div>
           <p class="mt-10">
-            &copy; Copyright 2018 Huddle. All rights reserved.
+            &copy; Copyright 2025 Huddle. All rights reserved.
           </p>
         </div>
       </div>
